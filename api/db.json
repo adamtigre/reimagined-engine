@@ -1,3 +1,14 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "id": 0,
+      "title": "first message",
+      "message": "This is the first short message on this platform"
+    },
+    {
+      "id": 1,
+      "title": "second message",
+      "message": "This is the second short message on this platform"
+    }
+  ]
 }
