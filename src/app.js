@@ -23,6 +23,22 @@ function getPosts(){
     .catch(err => console.log(err));
 }
 
+
+function deletePost(e){
+  e.preventDefault();
+  if (e.target.parentElement.classList.contains('delete')) {
+    const id = e.target.parentElement.dataset.id;
+    if (confirm("Are you Sure?")) {
+      http.delete(`http://localhost:3000/posts/${id}`)
+        .then(data => {
+          ui.showAlert("Post removed", "alert alert-success");
+          getPosts();
+        })
+        .catch(err => console.log(err));
+    }
+  }
+}
+
 function submitData(){
   const title = document.querySelector('#title').value;
   const body = document.querySelector('#body').value;
@@ -60,21 +76,6 @@ function submitData(){
   
   }
 
-}
-
-function deletePost(e){
-  e.preventDefault();
-  if (e.target.parentElement.classList.contains('delete')) {
-    const id = e.target.parentElement.dataset.id;
-    if (confirm("Are you Sure?")) {
-      http.delete(`http://localhost:3000/posts/${id}`)
-        .then(data => {
-          ui.showAlert("Post removed", "alert alert-success");
-          getPosts();
-        })
-        .catch(err => console.log(err));
-    }
-  }
 }
 
 function enableEdit(e){
