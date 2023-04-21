@@ -23,3 +23,12 @@ Follow these steps to run the Tiny Post application locally:
 - CSS: Styling the application components.
 - JavaScript: Programming language for the application logic.
 
+## Contributing
+
+Contributions to Tiny Post are welcome! Please submit issues or pull requests adhering to the existing code style and guidelines.
+
+## License
+
+The Tiny Post project is available under the [MIT License](https://github.com/adamtigre/tiny-post/blob/main/LICENSE).
+
+## Acknowledgments
