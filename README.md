@@ -15,3 +15,11 @@ Follow these steps to run the Tiny Post application locally:
 2. Install dependencies: `npm install`
 3. Start the development server: `npm start`
 4. Access the application in your browser at `http://localhost:3000`
+
+## Technologies Used
+
+- React: JavaScript library for building user interfaces.
+- Firebase: Cloud-based platform for user authentication and real-time database functionality.
+- CSS: Styling the application components.
+- JavaScript: Programming language for the application logic.
+
