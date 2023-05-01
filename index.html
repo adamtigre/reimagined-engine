@@ -16,20 +16,20 @@
     </div>
   </nav>
   <div class="container postsContainer">
-    <div class="card card-body card-form">
-      <h1>Say Something</h1>
-      <p class="lead">What's on your mind?</p>
-      <div class="form-group">
-        <input type="text" id="title" class="form-control" placeholder="Post title">
+      <div class="card card-body card-form">
+        <h1>Say Something</h1>
+        <p class="lead">What's on your mind?</p>
+        <div class="form-group">
+          <input type="text" id="title" class="form-control" placeholder="Post title">
+        </div>
+        <div class="form-group">
+          <textarea id="body" cols="30" rows="10" class="form-control" placeholder="Post body"></textarea> 
+        </div>
+        <input type="hidden" id="id" value="">
+        <button class="btn btn-primary btn-block post-submit">Post it</button>
+        <span class="form-end"></span>
       </div>
-      <div class="form-group">
-        <textarea id="body" cols="30" rows="10" class="form-control" placeholder="Post body"></textarea> 
-      </div>
-      <input type="hidden" id="id" value="">
-      <button class="btn btn-primary btn-block post-submit">Post it</button>
-      <span class="form-end"></span>
-    </div>
-    <br>
+      <br>
     <div id="posts"></div>
   </div>
   
