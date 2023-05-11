@@ -8,6 +8,22 @@
     width: 100%;
 }
 
+.actions__container--spaced {
+    justify-content: space-between
+  }
+  
+  /* Form Inputs */
+  
+  .input {
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    margin-right: 1.6rem;
+    padding: .4rem .8rem;
+  }
+  
+
 .body-input {
     border: 1px solid #DEDFE0;
     font-family: inherit;
@@ -37,20 +53,6 @@
     align-items: center
 }
 
-.actions__container--spaced {
-  justify-content: space-between
-}
-
-/* Form Inputs */
-
-.input {
-  border: none;
-  font-size: 1.4rem;
-  font-weight: 300;
-  height: 3rem;
-  margin-right: 1.6rem;
-  padding: .4rem .8rem;
-}
 
 .checkbox {
   display: flex;
@@ -72,24 +74,8 @@
   transition: background .3s ease, color .3s ease;
 }
 
-border-bottom: 2px solid #717171;
-}
 
-.button--secondary:hover {
-    background: #6E6E6E;
-}
 
-.button--text {
-    background: none;
-    border: none;
-    color: #aaa;
-}
-
-.button--text:hover {
-    background: none;
-    color: white;
-    text-decoration: underline;
-}
 
 /* Note editor */
 
@@ -151,6 +137,23 @@ border-bottom: 2px solid #717171;
     font-size: 1.8rem;
     margin-bottom: .4rem
 }
+
+.button--secondary:hover {
+    background: #6E6E6E;
+}
+
+.button--text {
+    background: none;
+    border: none;
+    color: #aaa;
+}
+
+.button--text:hover {
+    background: none;
+    color: white;
+    text-decoration: underline;
+}
+
 
 .list-item__subtitle {
     color: #666;
