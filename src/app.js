@@ -19,7 +19,7 @@ function submitData(){
     // Check for ID
     if (id === '') {
       // Create Post
-      http.post("http://localhost:3000/posts", data)
+      http.post("http://localhost:3000/all-post", data)
       .then(data => {
         ui.showAlert("Post added", "alert alert-success");
         ui.clearFields();
@@ -28,7 +28,7 @@ function submitData(){
       .catch(err => console.log(err));
     } else {
       // Update Post
-      http.put(`http://localhost:3000/posts/${id}`, data)
+      http.put(`http://localhost:3000/all-post/${id}`, data)
       .then(data => {
         ui.showAlert("Post updated", "alert alert-success");
         ui.changeFormState();
@@ -59,7 +59,7 @@ function enableEdit(e){
   }
 }
 function getPosts(){
-  http.get("http://localhost:3000/posts")
+  http.get("http://localhost:3000/all-post")
     .then(data => ui.showPosts(data))
     .catch(err => console.log(err));
 }
