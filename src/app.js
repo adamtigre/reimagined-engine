@@ -1,20 +1,6 @@
 import { http } from './http';
 import { ui } from './ui';
 
-// Get posts on DOM load
-addEventListener('DOMContentLoaded', getPosts);
-
-// Listen for Get form Data
-document.querySelector(".post-submit").addEventListener('click', submitData);
-
-// Listen for Delete Post
-document.querySelector("#posts").addEventListener('click', deletePost);
-
-// Listen for Enable edit state
-document.querySelector('#posts').addEventListener('click', enableEdit);
-
-// Listen for cancel
-document.querySelector('.card-form').addEventListener('click', cancelEdit);
 
 function submitData(){
   const title = document.querySelector('#title').value;
@@ -104,3 +90,13 @@ function cancelEdit(e){
 }
 
 
+// Get posts on DOM load
+addEventListener('DOMContentLoaded', getPosts);
+// Listen for Get form Data
+document.querySelector(".post-submit").addEventListener('click', submitData);
+// Listen for Delete Post
+document.querySelector("#posts").addEventListener('click', deletePost);
+// Listen for Enable edit state
+document.querySelector('#posts').addEventListener('click', enableEdit);
+// Listen for cancel
+document.querySelector('.card-form').addEventListener('click', cancelEdit);
